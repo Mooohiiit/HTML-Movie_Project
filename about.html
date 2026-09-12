@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie_Explorer_About_Us</title>
+    <link rel="icon" type="image/png" href="./photos_for_projects/new_movie-explorer.png">
+    <link rel="shortcut icon" type="image/png" href="./photos_for_projects/new_movie-explorer.png">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+
+        table {
+            position: relative;
+            margin: 0 auto;
+        }
+
+
+        body {
+            background-color: #0F1115;
+            color: #94A3B8;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .tl {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .outro {
+            text-align: center;
+            /* margin-top: 550px; */
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(238, 171, 64);
+            color: black;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        .intro {
+            margin-left: 150px;
+        }
+
+        .md,
+        .home,
+        .cata,
+        .about {
+            border: 1px solid #F8FAFC;
+            border-radius: 4px;
+            padding: 5px;
+            color: aqua;
+        }
+
+        input[type="submit"] {
+            color: #FFFFFF;
+            background-color: #10B981;
+            border-radius: 4px;
+            /* margin-bottom: 85px; */
+        }
+
+        .user_contact {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./photos_for_projects/new_movie-explorer.png" alt="Movie-Explorer-LOGO" height="100px" width="100px">
+        <nav>
+            <a href="./index.html" target="_self" class="home">HOME</a>
+            <a href="./movies.html" target="_self" class="cata">CATALOGUE</a>
+            <a href="./details.html" target="_self" class="md">MOVIE-DETAILS</a>
+            <a href="./about.html" target="_self" class="about">ABOUT_US</a>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <ul>
+                <li>
+                    <p>Heyyy Guys, I Am Mohit. I Made This Website To Ensure That Viewers Find Something Good To Watch
+                        From
+                        Every Genre.</p>
+                </li>
+                <li>
+                    <p>I Hope That You May Something Good To Watch From Movie Explorer.</p>
+                </li>
+                <li>
+                    <p>Please Give Us Your Feedback To Ensure That The User Gets Excellent Experience From Us.</p>
+                </li>
+            </ul>
+        </div>
+        <form method="post">
+            <div class="tl">
+                <h1 style="text-align: center;">Your Feedback</h1>
+                <hr>
+                <table cellspacing="25">
+                    <tr>
+                        <td class="user_contact" colspan="2"><label for="form">Your Contact</label></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="name">Your Name:</label> </td>
+                        <td> <input type="text" id="name" placeholder="Your Name" required autocomplete="name"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email:</label></td>
+                        <td><input type="email" id="mail" placeholder="Your Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num">Number:</label></td>
+                        <td><input type="tel" pattern="[0-9]{10}" id="num" placeholder="Your Number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ta">Feedback:</label></td>
+                        <td><textarea name="" id="ta" cols="20" rows="8" placeholder="Your Feedback"
+                                required></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="rat">Ratings:</label></td>
+                        <td><input type="number" pattern="[0-5]{1}" placeholder="Ratings Out Of 5" id="rat" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contact Us At</td>
+                        <td>Email: rojasaramohitvikrambhai@gmail.com <br>Number: 9328884323</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <p class="outro"> <b>Your Feedback Matters To Us, You Think We Don't Read Your Feedback But We Do. Please Help
+                Us To Build Good Together With You. </b></p>
+    </main>
+    <hr>
+    <footer>&copy; Mohit V. Rojasara/A7-231/B.Tech-DU-Rajkot</footer>
+</body>
+
+</html>

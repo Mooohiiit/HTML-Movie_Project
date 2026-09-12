@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie_Explorer_Details</title>
+    <link rel="icon" type="image/png" href="./photos_for_projects/new_movie-explorer.png">
+    <link rel="shortcut icon" type="image/png" href="./photos_for_projects/new_movie-explorer.png">
+    <style>
+        body {
+            background-color: #0F1115;
+            color: #94A3B8;
+            font-family: 'Inter', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .md,
+        .home,
+        .cata,
+        .about {
+            border: 1px solid #F8FAFC;
+            border-radius: 4px;
+            padding: 5px;
+            color: aqua;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(238, 171, 64);
+            color: black;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        /* ---- Every movie row (first through fourth raw) shares one flex rule now ---- */
+        .spider,
+        .jurassic,
+        .wednesday,
+        .vaazha,
+        .one,
+        .demon,
+        .reze,
+        .hill,
+        .secret,
+        .gen,
+        .weak,
+        .truebeauty,
+        .rocket,
+        .world,
+        .mumbai,
+        .toxic {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* ---- Shared poster box: every movie poster uses this ONE class now,
+               instead of a separate hand-tuned width rule per movie. ---- */
+        .poster-box {
+            flex: 0 0 220px;
+        }
+
+        .poster-box img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            padding: 10px;
+            border: 1px solid white;
+            background-color: aquamarine;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .wedim {
+            flex: 0 0 350px;
+        }
+
+        .wedim img {
+            width: 100%;
+            height: 200%;
+            object-fit: contain;
+        }
+
+        .images {
+            flex: 1;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h4 {
+            text-align: center;
+            color: #87CEFA;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./photos_for_projects/new_movie-explorer.png" alt="Movie-Explorer-LOGO" height="100px" width="100px">
+        <nav>
+            <a href="./index.html" target="_self" class="home">HOME</a>
+            <a href="./movies.html" target="_self" class="cata">CATALOGUE</a>
+            <a href="./details.html" target="_self" class="md">MOVIE-DETAILS</a>
+            <a href="./about.html" target="_self" class="about">ABOUT_US</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div class="details">
+            <section class="first_raw">
+                <div class="forspider">
+                    <div class="spider">
+                        <div class="spiderim poster-box">
+                            <img src="./photos_for_projects/new_spider.jpg" alt="spider-man_brand_new_day">
+                        </div>
+                        <div class="images">
+                            <h4>Key-Visuals</h4>
+                            <img src="./spidy-images/image1.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image2.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image3.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image4.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image5.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image6.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image7.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image8.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                            <img src="./spidy-images/image9.png" alt="Spider-man_Brand_New_Day" height="150px"
+                                width="250px">
+                        </div>
+                    </div>
+                    <p><b>Spider-Man:Brand New Day</b></p>
+                    <ul>
+                        <li><b>Release Year:</b> 2026</li>
+                        <li><b>IMDb Ratings⭐⭐⭐:</b> 8.0</li>
+                        <li><b>Genre:</b> Action, Superhero, Sci-Fi</li>
+                        <li><b>Director:</b> Destin Daniel Cretton</li>
+                        <li><b>Original Language:</b> English</li>
+                        <li><b>Production Budget:</b> $225 Million</li>
+                        <li><b>Box Office Revenue:</b> $2.338 Billion</li>
+                        <li>
+                            <p>Years after everyone forgot who he was, Peter Parker lives in complete isolation as a
+                                full-time Spider-Man. As the pressure of being forgotten mounts, an unseen threat
+                                emerges in New York, pushing his powers and sanity to the limit.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="forjurassic">
+                    <div class="jurassic">
+                        <div class="jurassicim poster-box">
+                            <img src="./photos_for_projects/Jurassic_World_Rebirth-thumbnail.webp"
+                                alt="Jurassic World:ReBirth">
+                        </div>
+                        <div class="images">
+                            <h4>Key-Visuals</h4>
+                            <img src="./Jurassic_World/image1.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                            <img src="./Jurassic_World/image2.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                            <img src="./Jurassic_World/image3.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                            <img src="./Jurassic_World/image4.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                            <img src="./Jurassic_World/image5.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                            <img src="./Jurassic_World/image6.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                            <img src="./Jurassic_World/image7.jpg" alt="Jurassic_World:ReBirth" height="150px"
+                                width="250px">
+                        </div>
+                    </div>
+                    <p><b>Jurassic World: ReBirth</b></p>
+                    <ul>
+                        <li><b>Release Year:</b> 2025</li>
+                        <li><b>IMDb Ratings⭐⭐⭐:</b> 6.1/10</li>
+                        <li><b>Genre:</b> Action, Sci-Fi, Adventure</li>
+                        <li><b>Director:</b> Gareth Edwards</li>
+                        <li><b>Original Language:</b> English</li>
+                        <li><b>Production Budget:</b> $180 Million</li>
+                        <li><b>Box Office Revenue:</b> $872.4 Million</li>
+                        <li>
+                            <p>Set years after Dominion, a team leads a secret mission into equatorial regions—the only
+                                places left with viable environments for prehistoric life—to secure DNA from the world's
+                                three largest surviving dinosaurs for a groundbreaking medical cure.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="forwed">
+                    <div class="wednesday">
+                        <div class="wedim poster-box">
+                            <img src="./photos_for_projects/Wednesday.jpg" alt="Wednesday">
+                        </div>
+                        <div class="images">
+                            <h4>Key-Visuals</h4>
+                            <img src="./wednesday/image1.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image2.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image3.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image4.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image5.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image6.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image7.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                            <img src="./wednesday/image8.jpg" alt="Wednesday_Images" height="150px" width="250px">
+                        </div>
+                    </div>
+                    <p><b>Wednesday</b></p>
+                    <ul>
+                        <li><b>Release Year:</b> 2022</li>
+                        <li><b>IMDb Ratings⭐⭐⭐:</b> 8.1/10</li>
+                        <li><b>Genre:</b> Comedy, Crime, Fantasy (TV Series)</li>
+                        <li><b>Director:</b> Tim Burton, et al.</li>
+                        <li><b>Original Language:</b> English</li>
+                        <li><b>Production Budget:</b> $30 Million/Season</li>
+                        <li><b>Box Office Revenue:</b> N/A(Streaming-Netflix)</li>
+                        <li>
+                            <p>A mystery-infused supernatural series following Wednesday Addams as a student at
+                                Nevermore Academy, where she attempts to master her emerging psychic ability, thwart a
+                                monstrous killing spree, and solve the murder mystery that embroiled her parents 25
+                                years ago.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="forvaazha">
+                    <div class="vaazha">
+                        <div class="vaazhaim poster-box">
+                            <img src="./photos_for_projects/Vaazha_2.webp" alt="Vaazha-II_Movie_Poster">
+                        </div>
+                        <div class="images">
+                            <h4>Key-Visuals</h4>
+                            <img src="./Vaazha-II/image1.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image2.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image3.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image4.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image5.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image6.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image7.jpg" alt="Vaazha-II" height="150px" width="250px">
+                            <img src="./Vaazha-II/image8.jpg" alt="Vaazha-II" height="150px" width="250px">
+                        </div>
+                    </div>
+                    <p><b>Vaazha-2</b></p>
+                    <ul>
+                        <li><b>Release Year:</b> 2026</li>
+                        <li><b>IMDb Ratings⭐⭐⭐:</b> N/A</li>
+                        <li><b>Genre:</b> Comedy, Drama</li>
+                        <li><b>Director:</b> Savith Sreejan</li>
+                        <li><b>Original Language:</b> Malayalam</li>
+                        <li><b>Production Budget:</b> Not Disclosed</li>
+                        <li><b>Box Office Revenue:</b> TBD</li>
+                        <li>
+                            <p>A coming-of-age slice-of-life comedy following a tight-knit group of self-proclaimed
+                                "loser" friends navigating the chaotic ups and downs of college life, family pressure,
+                                and adulting struggles as they try to make a future for themselves.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="second_raw">
+            <div class="forop">
+                <div class="one">
+                    <div class="oneim poster-box">
+                        <img src="./photos_for_projects/One_Piece_God_Valley_Movie.jpg" alt="One_Piece:God_Valley-ARC">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./one_piece/image1.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image2.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image3.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image4.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image5.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image6.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image7.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                        <img src="./one_piece/image8.jpg" alt="One_Piece-GOD_Valley" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>One Piece: God-Valley</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2027(Upcoming)</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> N/A</li>
+                    <li><b>Genre:</b> Anime, Action, Fantasy(Manga/Anime Arc)</li>
+                    <li><b>Director:</b> Eiichiro Oda</li>
+                    <li><b>Original Language:</b> Japanese</li>
+                    <li><b>Production Budget:</b> N/A</li>
+                    <li><b>Box Office Revenue:</b> N/A</li>
+                    <li>
+                        <p>A legendary prequel event detailing the battle where Marine Hero Monkey D. Garp and
+                            Pirate King Gol D. Roger unexpectedly joined forces to defeat the tyrannical Rocks
+                            Pirates and protect the Celestial Dragons on the island of God Valley.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fordemon">
+                <div class="demon">
+                    <div class="demonim poster-box">
+                        <img src="./photos_for_projects/DEMON_SLAYER_MOVIE-POSTER.jpg"
+                            alt="Demon_Slayer_Infinity-Castle-ARC">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./demon-slayer-images/image1.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image2.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image3.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image4.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image5.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image6.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image7.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                        <img src="./demon-slayer-images/image8.jpg" alt="Demon-Slayer Infinity Castle Arc"
+                            height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>Demon Slayer Infinity Castle ARC</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2025</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 8.7/10</li>
+                    <li><b>Genre:</b> Anime, Action, Dark Fantasy</li>
+                    <li><b>Director:</b> Haruo Sotozaki</li>
+                    <li><b>Original Language:</b> Japanese</li>
+                    <li><b>Production Budget:</b> $20 Million</li>
+                    <li><b>Box Office Revenue:</b> $793.5 Million</li>
+                    <li>
+                        <p>The Demon Slayer Corps is pulled directly into Muzan Kibutsuji's endlessly shifting
+                            subterranean stronghold, triggering all-out, high-stakes final battles between the
+                            Hashira and the deadliest Upper-Rank Demons.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="forreze">
+                <div class="reze">
+                    <div class="rezeim poster-box">
+                        <img src="./photos_for_projects/Chainsaw_Man-REZE-ARC.jpg" alt="Chainsaw_Man-Reze:ARC">
+                    </div>
+                    <div class="images">
+                        <h4>Posters</h4>
+                        <img src="./chainsaw/image1.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                        <img src="./chainsaw/image2.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                        <img src="./chainsaw/image3.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                        <img src="./chainsaw/image4.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                        <img src="./chainsaw/image5.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                        <img src="./chainsaw/image6.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                        <img src="./chainsaw/image7.webp" alt="Chainsaw Man:Reze ARC" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>Chainsaw Man:Reze ARC</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2025</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 8.4/10</li>
+                    <li><b>Genre:</b> Anime, Action, Dark Fantasy</li>
+                    <li><b>Director:</b> Tatsuya Yoshihara</li>
+                    <li><b>Original Language:</b> Japanese</li>
+                    <li><b>Production Budget:</b> $15 Million</li>
+                    <li><b>Box Office Revenue:</b> $191.4 Million</li>
+                    <li>
+                        <p>Denji meets Reze, a sweet girl working at a local coffee shop who seems genuinely
+                            interested in him, only to be dragged into a deadly fight when her true identity as the
+                            explosive Bomb Devil is revealed.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="forhill">
+                <div class="hill">
+                    <div class="hillim poster-box">
+                        <img src="./photos_for_projects/From_Up_on_Poppy_Hill.webp" alt="From-Up-On-Poppy-Hill">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./hill/image1.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image2.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image3.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image4.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image5.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image6.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image7.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                        <img src="./hill/image8.webp" alt="From_Up_On_Poppy_Hill" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>From Up On Poppy Hill</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2011</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 7.4/10</li>
+                    <li><b>Genre:</b> Anime, Slice Of Life, Drama</li>
+                    <li><b>Director:</b> Goro Miyazaki</li>
+                    <li><b>Original Language:</b> Japanese</li>
+                    <li><b>Production Budget:</b> $22 Million</li>
+                    <li><b>Box Office Revenue:</b> $61.5 Million</li>
+                    <li>
+                        <p>Set in 1963 Yokohama, high school students Umi and Shun form a deep connection while
+                            trying to save their beloved, dilapidated clubhouse from demolition, uncovering a
+                            shared, bittersweet family connection from the past in the process.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="third_raw">
+            <div class="forsecret">
+                <div class="secret">
+                    <div class="secretim poster-box">
+                        <img src="./photos_for_projects/Our_Secret.jpg" alt="Our_Secret">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./secret/image1.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image2.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image3.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image4.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image5.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image6.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image7.webp" alt="Our_Secret" height="150px" width="250px">
+                        <img src="./secret/image8.webp" alt="Our_Secret" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>Our Secret</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2023</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 7.1/10</li>
+                    <li><b>Genre:</b> Romance, Youth Drama</li>
+                    <li><b>Director:</b> Hayato Kawai</li>
+                    <li><b>Original Language:</b> Japanese</li>
+                    <li><b>Production Budget:</b> Not Disclosed</li>
+                    <li><b>Box Office Revenue:</b> $7 Million</li>
+                    <li>
+                        <p>A sweet coming-of-age romance following high school desk mates Ding Xian and Zhou
+                            Siyue—one an awkward, stubborn transfer student and the other a brilliant campus
+                            heartthrob—as they grow, support each other through academic struggles, and fall in love
+                            over the years.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="forgenn">
+                <div class="gen">
+                    <div class="genim poster-box">
+                        <img src="./photos_for_projects/Gen_Z.jpg" alt="Gen-Z">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./gen/image1.webp" alt="Gen-Z" height="150px" width="250px">
+                        <img src="./gen/image2.webp" alt="Gen-Z" height="150px" width="250px">
+                        <img src="./gen/image3.webp" alt="Gen-Z" height="150px" width="250px">
+                        <img src="./gen/image4.webp" alt="Gen-Z" height="150px" width="250px">
+                        <img src="./gen/image5.webp" alt="Gen-Z" height="150px" width="250px">
+                        <img src="./gen/image6.webp" alt="Gen-Z" height="150px" width="250px">
+                        <img src="./gen/image7.webp" alt="Gen-Z" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>Gen-Z</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2023</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 6.8/10</li>
+                    <li><b>Genre:</b> Drama, Romance(TV Series)</li>
+                    <li><b>Director:</b> Hao Xiao Guang</li>
+                    <li><b>Original Language:</b> Mandarin</li>
+                    <li><b>Production Budget:</b> Not Disclosed</li>
+                    <li><b>Box Office Revenue:</b> N/A(TV Broadcast / Streaming)</li>
+                    <li>
+                        <p>A Chinese drama following Sun Tou Tou, an orphan who gets into trouble but is taken under
+                            the wing of a Traditional Chinese Medicine (TCM) professor to learn the practice,
+                            changing her life trajectory as she finds family, purpose, and love along the way.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="forweak">
+                <div class="weak">
+                    <div class="weakim poster-box">
+                        <img src="./photos_for_projects/Weak_Hero.jpg" alt="Weak_Hero">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./weak/image1.jpg" alt="Weak Hero Season 2" height="150px" width="250px">
+                        <img src="./weak/image2.jpg" alt="Weak Hero Season 2" height="150px" width="250px">
+                        <img src="./weak/image3.jpg" alt="Weak Hero Season 2" height="150px" width="250px">
+                        <img src="./weak/image4.jpg" alt="Weak Hero Season 2" height="150px" width="250px">
+                        <img src="./weak/image5.jpg" alt="Weak Hero Season 2" height="150px" width="250px">
+                        <img src="./weak/image6.jpg" alt="Weak Hero Season 2" height="150px" width="250px">
+
+                    </div>
+                </div>
+                <p><b>Weak Hero Season 2</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2022</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 8.5/10</li>
+                    <li><b>Genre:</b> Action, Drama, Thriller(K-Drama)</li>
+                    <li><b>Director:</b> Yoo Su-min</li>
+                    <li><b>Original Language:</b> Korean</li>
+                    <li><b>Production Budget:</b> Not Disclosed</li>
+                    <li><b>Box Office Revenue:</b> N/A(Streaming)</li>
+                    <li>
+                        <p>After the tragic events at Eunjang High, Yeon Si-eun transfers to Eunjang High School,
+                            carrying heavy emotional scars. As he tries to keep a low profile, he is forced back
+                            into violent conflicts against powerful new bully factions and illegal gang networks to
+                            protect his new allies.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fortrue">
+                <div class="truebeauty">
+                    <div class="trueim poster-box">
+                        <img src="./photos_for_projects/True_Beauty.jpg" alt="True_Beauty">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./True/image1.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image2.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image3.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image4.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image5.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image6.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image7.jpeg" alt="True_Beauty" height="150px" width="250px">
+                        <img src="./True/image8.jpeg" alt="True_Beauty" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>True Beauty</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2020</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 8.0/10</li>
+                    <li><b>Genre:</b> Romantic Comedy, Coming-of-Age (K-Drama)</li>
+                    <li><b>Director:</b> Kim Sang-hyeop</li>
+                    <li><b>Original Language:</b> Korean</li>
+                    <li><b>Production Budget:</b> $10 Million</li>
+                    <li><b>Box Office Revenue:</b> N/A (TV Broadcast/ Streaming)</li>
+                    <li>
+                        <p>After being bullied for her looks, high school girl Lim Ju-kyung masters the art of
+                            makeup to transform into a stunning "goddess," leading to a heartwarming love triangle
+                            with two handsome classmates who learn to love her true self behind the cosmetic mask.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="fourth_raw">
+            <div class="forrocket">
+                <div class="rocket">
+                    <div class="rocketim poster-box">
+                        <img src="./photos_for_projects/Rocketry.jpeg" alt="rocketry">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./rocketary/image1.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image2.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image3.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image4.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image5.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image6.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image7.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                        <img src="./rocketary/image8.png" alt="Rocketry The Nambi Effect" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>Rocketry The Nambi Effect</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2022</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 8.7/10</li>
+                    <li><b>Genre:</b> Biographical, Drama</li>
+                    <li><b>Director:</b> R. Madhavan</li>
+                    <li><b>Original Language:</b> Tamil, Hindi, English</li>
+                    <li><b>Production Budget:</b> $3 Million</li>
+                    <li><b>Box Office Revenue:</b> $6 Million</li>
+                    <li>
+                        <p>A biographical drama telling the life story of Nambi Narayanan, a brilliant ISRO
+                            scientist who was falsely accused of espionage, depicting his path to exoneration and
+                            his immense contributions to India's space program.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="forworld">
+                <div class="world">
+                    <div class="worldim poster-box">
+                        <img src="./photos_for_projects/World_War-II.jpg" alt="World_War-II">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./war/image1.webp" alt="World War-II From The Frontlines" height="150px"
+                            width="250px">
+                        <img src="./war/image2.webp" alt="World War-II From The Frontlines" height="150px"
+                            width="250px">
+                        <img src="./war/image3.webp" alt="World War-II From The Frontlines" height="150px"
+                            width="250px">
+                        <img src="./war/image4.webp" alt="World War-II From The Frontlines" height="150px"
+                            width="250px">
+                        <img src="./war/image5.jpg" alt="World War-II From The Frontlines" height="150px" width="250px">
+                        <img src="./war/image6.jpeg" alt="World War-II From The Frontlines" height="150px"
+                            width="250px">
+                        <img src="./war/image7.jpg" alt="World War-II From The Frontlines" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>World War-II</b></p>
+                <ul>
+                    <li><b>Release Year:</b> N/A</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> N/A</li>
+                    <li><b>Genre:</b> Historical Event/ Various Documentaries</li>
+                    <li><b>Director:</b> Various</li>
+                    <li><b>Original Language:</b> Multi-Language</li>
+                    <li><b>Production Budget:</b> N/A</li>
+                    <li><b>Box Office Revenue:</b> N/A</li>
+                    <li>
+                        <p>A compelling historical documentary series that uses restored, colorized archival footage
+                            and real soldier accounts to tell the story of WWII directly from the perspective of
+                            those fighting on the front lines.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="formumbai">
+                <div class="mumbai">
+                    <div class="mumbaiim poster-box">
+                        <img src="./photos_for_projects/Mumbai_Mafia.jpg" alt="Mumbai_Mafia:Police_Vs_The_Underworld">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./mumbai/image1.jpg" alt="Mumbai Mafia:Police Vs The Underworld" height="150px"
+                            width="300px">
+                        <img src="./mumbai/image2.jpg" alt="Mumbai Mafia:Police Vs The Underworld" height="150px"
+                            width="250px">
+                        <img src="./mumbai/image3.jpg" alt="Mumbai Mafia:Police Vs The Underworld" height="150px"
+                            width="300px">
+                        <img src="./mumbai/image4.jpg" alt="Mumbai Mafia:Police Vs The Underworld" height="150px"
+                            width="250px">
+                        <img src="./mumbai/image5.jpg" alt="Mumbai Mafia:Police Vs The Underworld" height="150px"
+                            width="250px">
+                    </div>
+                </div>
+                <p><b>Mumbai Mafia:Police Vs The Underworld</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2023</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 6.5/10</li>
+                    <li><b>Genre:</b> Crime, Documentaries</li>
+                    <li><b>Director:</b> Francis Longhurst, Raaghav Dar</li>
+                    <li><b>Original Language:</b> Hindi, English</li>
+                    <li><b>Production Budget:</b> Not Disclosed</li>
+                    <li><b>Box Office Revenue:</b> N/A(Streaming - Netflix)</li>
+                    <li>
+                        <p>A gritty true-crime documentary detailing the rise of organized crime syndicates in 1990s
+                            Mumbai and the controversial "encounter specialists" empowered by the police force to
+                            dismantle the mafia through lethal force.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fortoxic">
+                <div class="toxic">
+                    <div class="toxicim poster-box">
+                        <img src="./photos_for_projects/A_Toxic_Love_Story.jpg" alt="A_Toxic_Love_Story">
+                    </div>
+                    <div class="images">
+                        <h4>Key-Visuals</h4>
+                        <img src="./toxic_lo/image1.jpg" alt="A_Toxic_Love_Story" height="150px" width="250px">
+                        <img src="./toxic_lo/image2.webp" alt="A_Toxic_Love_Story" height="150px" width="250px">
+                        <img src="./toxic_lo/image3.jpg" alt="A_Toxic_Love_Story" height="150px" width="250px">
+                        <img src="./toxic_lo/image4.webp" alt="A_Toxic_Love_Story" height="150px" width="250px">
+                        <img src="./toxic_lo/image5.webp" alt="A_Toxic_Love_Story" height="150px" width="250px">
+                    </div>
+                </div>
+                <p><b>A Toxic Love Story</b></p>
+                <ul>
+                    <li><b>Release Year:</b> 2026</li>
+                    <li><b>IMDb Ratings⭐⭐⭐:</b> 5.8/10</li>
+                    <li><b>Genre:</b> Drama, Romance</li>
+                    <li><b>Director:</b> Various(Indie/Short Titles)</li>
+                    <li><b>Original Language:</b> English</li>
+                    <li><b>Production Budget:</b> Not Disclosed</li>
+                    <li><b>Box Office Revenue:</b> Minimal/ VOD Release</li>
+                    <li>
+                        <p>A dramatic romance exploring the intense, volatile dynamics between two deeply passionate
+                            yet flawed individuals whose obsessive connection leads them down a path of emotional
+                            turbulence, betrayal, and self-discovery.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>&copy; Mohit V. Rojasara/A7-231/B.Tech-DU-Rajkot</footer>
+</body>
+
+</html>
